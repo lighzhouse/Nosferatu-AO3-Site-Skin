@@ -810,7 +810,7 @@ li.relationships + li.freeforms {
 }
 
 .warnings .tag {
-  background: rgba(157, 216, 224, .7) !important;
+  background: rgba(104, 208, 222, .7) !important;
   color: #000 !important;
 }
 
