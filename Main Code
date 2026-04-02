@@ -126,6 +126,7 @@ li.added.tag {
   display: inline-block;
   padding: 1px 2px;
   margin: 2px 1px 2px 2px;
+  background: rgb(0, 0, 0, .7);
   border-radius: 2px 6px;
   border: 0.1em solid rgb(77, 207, 225, .1);
   box-shadow: -1px 10px 20px #000;
@@ -239,7 +240,7 @@ ul.notes,
 .kudos_error,
 .alert.flash,
 .LV_invalid {
-  background: rgba(0, 0, 0,.6);
+  background: rgba(0, 0, 0,.8);
   border-radius: 5px;
   border: 2px dotted #44d2e8;
   box-shadow: 0px 0px 10px #000;
@@ -323,6 +324,7 @@ hr::after {
   content: "────── ⋆⋅ ♰ ⋅⋆ ──────";
 }
 
+form dl,
 fieldset,
 fieldset dl dl,
 fieldset fieldset fieldset,
@@ -450,18 +452,18 @@ div.dynamic {
 }
 
 .bookmark .user {
-  background: rgba(0, 0, 0,.29);
+  background: rgba(0, 0, 0,.7);
   border: 2px solid #12383e;
   border-radius: 5px;
 }
 
 .bookmark .user:nth-child(odd) {
-  border-radius: 4px 20px;
+  border-radius: 5px;
   margin-bottom: 0.5;
 }
 
 .bookmark .user:nth-child(even) {
-  border-radius: 4px 20px;
+  border-radius: 5px;
   margin-bottom: 0.5;
 }
 
@@ -590,7 +592,7 @@ span.unread {
 
 .draft {
   border: 2px dashed #9dd8e0;
-  background: rgba(157, 216, 224, .3);
+  background: rgba(0, 0, 0, .3);
 }
 
 .draft.work .wrapper {
@@ -765,6 +767,14 @@ li.blurb {
   filter: brightness(0) saturate(100%) invert(92%) sepia(65%) saturate(1196%) hue-rotate(155deg) brightness(106%) contrast(105%);
 }
 
+.blurb h4 {
+  font-size: medium !important;
+}
+
+.blurb h4 a:visited {
+  color: #3f8caa !important;
+}
+
 li.blurb .header h5.heading {
   max-height: 2.5em;
   max-width: 70%;
@@ -803,6 +813,11 @@ li.relationships + li.freeforms {
   border: 4px solid #000;
   background: rgba(157, 216, 224, .8);
   color: #000 !important;
+}
+
+li.blurb a.tag[href*="No%20Archive%20Warnings%20Apply" i] {
+  background: rgba(0, 0, 0, .6) !important;
+  color: rgb(186, 215, 219, .99) !important;
 }
 
 li.relationships:has(a[href*="*s*"]) a.tag::before {
@@ -1304,19 +1319,22 @@ span.rating-teen.rating,
 span.rating-mature.rating,
 span.warning-choosenotto.warnings,
 span.category-femslash.category {
-  filter: sepia(100%) hue-rotate(140deg) brightness(60%) saturate(300%);
-  box-shadow: 0px 0px 5px #94dfe5;
+  filter: sepia(100%) hue-rotate(140deg) brightness(80%) saturate(300%);
+  box-shadow: 0px 0px 5px #33595c;
   font-size: small;
 }
 
 span.rating-notrated.rating,
 span.category-none.category,
 span.warning-no.warnings {
-  filter: brightness(5%);
+  filter: brightness(1%);
 }
 
-.blurb h4 a:visited {
-  color: #555555 !important;
+.blurb ul.required-tags li span,
+.bookmark .status span:not(.status .private),
+#symbols-key dl img,
+#bookmark-symbols-key img {
+  border-radius: 0.25em;
 }
 
 .tag .primary .icon,
