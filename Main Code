@@ -772,7 +772,7 @@ li.blurb {
 }
 
 .blurb h4 a:visited {
-  color: #3f8caa !important;
+  color: #658794 !important;
 }
 
 li.blurb .header h5.heading {
