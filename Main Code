@@ -504,7 +504,7 @@ dl.subscription.index.group {
 
 .bio.module {
   margin-top: 2em;
-  background: rgba(8, 12, 15,.5);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .bio.module h3.heading {
